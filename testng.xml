@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name ="FidoCAFramework_new Test Automation Test Suite">
+<!--    <listeners>-->
+<!--        <listener class-name="Listeners.selenium.com.fido.qa.ScreenshotListener"></listener>-->
+<!--    </listeners>-->
+
+    <listeners>
+        <listener class-name="com.fido.qa.ExtentReportListener.ExtentReporterNG" />
+    </listeners>
+
+    <test name ="Fido App Test Cases">
+
+        <classes>
+
+            <class name="com.fido.qa.Testcases.HomePageTest"></class>
+           <class name="com.fido.qa.Testcases.PhonePageTest"></class>
+           <class name="com.fido.qa.Testcases.SupportPageTest"></class>
+
+        </classes>
+    </test>
+</suite>
