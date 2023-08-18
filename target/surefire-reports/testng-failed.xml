@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FidoCAFramework_new Test Automation Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.fido.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Fido App Test Cases(failed)" verbose="0">
+    <classes>
+      <class name="com.fido.qa.Testcases.SupportPageTest">
+        <methods>
+          <include name="gettingBtn"/>
+          <include name="supportPageTitle"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fido.qa.Testcases.SupportPageTest -->
+      <class name="com.fido.qa.Testcases.PhonePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="phonePageTitle"/>
+          <include name="ClickSidebarChkBtn"/>
+        </methods>
+      </class> <!-- com.fido.qa.Testcases.PhonePageTest -->
+      <class name="com.fido.qa.Testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="supportPage"/>
+          <include name="shopPageClick"/>
+        </methods>
+      </class> <!-- com.fido.qa.Testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Fido App Test Cases(failed) -->
+</suite> <!-- Failed suite [FidoCAFramework_new Test Automation Test Suite] -->

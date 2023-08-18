@@ -1,0 +1,12 @@
+com\fido\qa\Pages\WhyFidoPage.class
+com\fido\qa\Pages\PhonePage.class
+com\fido\qa\Utils\TestUtil.class
+com\fido\qa\base\TestBase.class
+com\fido\qa\Pages\HomePage.class
+com\fido\qa\ExtentReportListener\ExtentReporterNG.class
+com\fido\qa\Utils\WebEventListener.class
+com\fido\qa\Testcases\PhonePageTest.class
+com\fido\qa\Data\ExcelData.class
+com\fido\qa\Pages\SupportPage.class
+com\fido\qa\Testcases\SupportPageTest.class
+com\fido\qa\Testcases\HomePageTest.class
