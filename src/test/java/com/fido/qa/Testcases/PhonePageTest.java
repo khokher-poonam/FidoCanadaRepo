@@ -58,7 +58,7 @@ homepage=new HomePage();
         phonePage.contact_no(data[4]);
         phonePage.billing((String)data[5]);
        // phonePage.additionalComment((String)data[6]);
-Thread.sleep(2000);
+Thread.sleep(3000);
     }
     @AfterMethod
     public void tearDown()
