@@ -6,9 +6,7 @@ import com.fido.qa.Pages.SupportPage;
 import com.fido.qa.Pages.WhyFidoPage;
 import com.fido.qa.base.TestBase;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class HomePageTest extends TestBase {
  HomePage homepage = new HomePage();
@@ -20,7 +18,7 @@ WhyFidoPage whyFidoPage;
     }
 
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp()  {
         initialization();
         homepage=new HomePage();
@@ -54,6 +52,7 @@ public void supportPage()
 
 
 
+
 @Test(priority = 5)
 public void whyFidoPage()
 {
@@ -63,7 +62,7 @@ public void whyFidoPage()
 
 
 
-    @AfterMethod
+    @AfterClass
     public void tearDown()
     {
         driver.quit();

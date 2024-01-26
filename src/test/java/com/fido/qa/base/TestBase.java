@@ -52,11 +52,11 @@ catch(IOException e)
         }
 
         /******************************* for WebEventListener class *********************** */
-//        e_driver = new EventFiringWebDriver(driver);
-//        // Now create object of EventListerHandler to register it with EventFiringWebDriver
-//        eventListener = new WebEventListener();
-//        e_driver.register(eventListener);
-//        driver = e_driver;
+        e_driver = new EventFiringWebDriver(driver);
+        // Now create object of EventListerHandler to register it with EventFiringWebDriver
+        eventListener = new WebEventListener();
+        e_driver.register(eventListener);
+        driver = e_driver;
 
    driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);

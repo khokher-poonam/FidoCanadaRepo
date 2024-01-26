@@ -45,7 +45,7 @@ public class ExcelData extends TestBase {
             List<Object>cellData =new ArrayList<>();
             Row row =rowIterator.next();
 
-
+//iterator method-will hold every values, iterate one by one.
             Iterator<Cell> cellIterator =row.cellIterator();
             while (cellIterator.hasNext()){
                 Cell cell =cellIterator.next();

@@ -15,7 +15,7 @@ public class HomePage extends TestBase {
     WebElement SHOP;
     @FindBy(xpath="//span[contains(text(),\"Phones\")]")
     WebElement Phones;
-    @FindBy(xpath="//img[@alt='Pride Fido Logo Header EN']")
+    @FindBy(xpath="//div[@class=\"d-none d-lg-block\"]//img[@alt='Fido Logo - Home']")
     WebElement FidoLogo;
     @FindBy(xpath="//span[contains(text(),'SUPPORT')]")
     WebElement supportPageLink;

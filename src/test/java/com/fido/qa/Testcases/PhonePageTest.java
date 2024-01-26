@@ -5,10 +5,7 @@ import com.fido.qa.Pages.HomePage;
 import com.fido.qa.Pages.PhonePage;
 import com.fido.qa.base.TestBase;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.Iterator;
 
@@ -19,7 +16,7 @@ HomePage homepage;
     {
         super();
     }
-    @BeforeMethod
+    @BeforeClass
     public void setUp() throws InterruptedException {
 initialization();
         phonePage=new PhonePage();
@@ -60,7 +57,7 @@ homepage=new HomePage();
        // phonePage.additionalComment((String)data[6]);
 Thread.sleep(3000);
     }
-    @AfterMethod
+    @AfterClass
     public void tearDown()
     {
         driver.quit();
